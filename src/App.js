@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.scss";
+import "./components/Header/Header.scss"
+import "./components/ProductCard/ProductCard.scss"
+import Header from "./components/Header/Header";
+import ProductCard from "./components/ProductCard/ProductCard";
+import {categories} from "./helper/data";
+import {products} from "./helper/data";
+
+
 
 function App() {
+ console.log(products);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div >
+    <Header categories={categories}/>
+    <ProductCard products={products}/>
     </div>
-  );
+  )
 }
 
 export default App;
