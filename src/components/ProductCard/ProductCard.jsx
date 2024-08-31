@@ -1,8 +1,8 @@
 
 
 
-
  const ProductCard = ({products}) => {
+  
   return (
     <div className="cardList">
     {
